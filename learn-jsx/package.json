@@ -1,0 +1,26 @@
+{
+  "name": "complete-react",
+  "version": "1.0.0",
+  "description": "react js complete course",
+  "main": "App.js",
+  "scripts": {
+    "dev": "vite",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "react",
+    "suraj"
+  ],
+  "author": "suraj",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.26.7",
+    "@babel/preset-env": "^7.26.7",
+    "@babel/preset-react": "^7.26.3",
+    "vite": "^6.0.11"
+  },
+  "dependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  }
+}
