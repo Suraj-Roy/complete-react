@@ -4,7 +4,7 @@
   "description": "react js complete course",
   "main": "App.js",
   "scripts": {
-    "dev" : "vite",
+    "dev": "vite",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -17,6 +17,7 @@
     "vite": "^6.0.11"
   },
   "dependencies": {
+    "complete-react": "file:",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   }
