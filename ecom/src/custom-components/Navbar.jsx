@@ -1,4 +1,4 @@
-const Navbar = () => {
+const Navbar = ({filterProducts, isFilterActive}) => {
   return (
     <>
       <div className="navbar bg-base-100 shadow-sm">
@@ -51,8 +51,9 @@ const Navbar = () => {
         </div>
 
         <div className="navbar-end mx-4">
-          <button onClick={() => {console.log("button clicked")}} className="btn btn-ghost flex ">
-            Top Rated Product
+          <button onClick={() => filterProducts(4)} className="btn btn-ghost flex ">
+            {isFilterActive?'All Products':'Top Rated Product'}
+            
           </button>
 
           <div className="dropdown dropdown-end">

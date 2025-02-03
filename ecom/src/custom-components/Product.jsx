@@ -1,5 +1,5 @@
-const Product = ({ props }) => {
-  const {id, title, image, rating, price,description,category} = props;
+const Product = ({ product }) => {
+  const {id, title, image, rating, price,description,category} = product;
   // console.log(title)
   // console.log(image)
   return (
