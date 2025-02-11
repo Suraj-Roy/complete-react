@@ -1,13 +1,31 @@
+
 import Navbar from "./custom-components/Navbar"
 import { ProductCard } from "./custom-components/ProductCard"
-import { useState } from "react"
-import { productList } from "./js-file/productsjason"
+import { useEffect, useState } from "react"
+
+
+
 
 
 const App = () => {
-  const [products, setProducts] = useState(productList);
+  const [products, setProducts] = useState([]);
+
+  const [productList,setProductList] = useState([]);
 
   const [isFilterActive, setIsFilterActive] = useState(false);
+
+  useEffect (() => {
+    getProductsData()
+  },[]);
+
+ 
+
+  const getProductsData = async () => {
+    const response = await fetch('https://fakestoreapi.com/products');
+    const data = await response.json();
+    setProductList(data);
+    setProducts(data);
+  }
 
   const filterProducts = (rate)=>{
 
@@ -31,3 +49,5 @@ const App = () => {
 }
 
 export default App
+
+

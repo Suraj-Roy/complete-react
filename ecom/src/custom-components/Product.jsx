@@ -1,8 +1,13 @@
 const Product = ({ product }) => {
+  if(!product){
+    return <div>Product Not Found</div>;
+  }
   const {id, title, image, rating, price,description,category} = product;
   // console.log(title)
   // console.log(image)
-  return (
+  console.log(product);
+
+  return(
     <>
       <div className="card bg-base-100 w-60 shadow-sm  mx-auto flex my-4">
         <figure>

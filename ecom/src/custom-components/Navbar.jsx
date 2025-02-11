@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Navbar = ({filterProducts, isFilterActive}) => {
   return (
     <>
@@ -8,7 +10,7 @@ const Navbar = ({filterProducts, isFilterActive}) => {
         <div className="navbar-start lg:flex mx-4">
           <ul className="menu menu-horizontal px-1">
             <li>
-              <a>Men</a>
+              <Link to="/men">Men</Link>
             </li>
             <li>
               <details>
@@ -24,7 +26,7 @@ const Navbar = ({filterProducts, isFilterActive}) => {
               </details>
             </li>
             <li>
-              <a>Kids</a>
+            <Link to="/kids">Kids</Link>
             </li>
           </ul>
         </div>
